@@ -1,0 +1,344 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SUGITHRA C S | Portfolio</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f7fb;
+    color: #263449;
+    line-height: 1.7;
+}
+
+header {
+    background: #101f36;
+    color: white;
+    padding: 18px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    color: #65c5ff;
+    font-size: 21px;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 9px;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #65c5ff;
+}
+
+.hero {
+    background: linear-gradient(135deg, #101f36, #173f65);
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 12px;
+}
+
+.hero h3 {
+    color: #65c5ff;
+    font-size: 21px;
+}
+
+.hero p {
+    max-width: 650px;
+    margin: 20px auto;
+}
+
+.btn {
+    display: inline-block;
+    background: #168bd2;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 6px;
+    margin: 10px 5px;
+}
+
+.btn:hover {
+    background: #0869a6;
+}
+
+section {
+    padding: 65px 8%;
+}
+
+section h2 {
+    text-align: center;
+    color: #10243b;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    margin: 18px auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.06);
+    max-width: 900px;
+}
+
+.card h3 {
+    color: #126da8;
+    margin-bottom: 10px;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+}
+
+.skills span {
+    background: #e1f1ff;
+    color: #13527e;
+    padding: 9px 17px;
+    border-radius: 20px;
+}
+
+.project-link {
+    color: #0878ba;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.project-link:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background: #101f36;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+@media(max-width: 650px) {
+    header {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    nav {
+        text-align: center;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px;
+    }
+
+    .hero h1 {
+        font-size: 31px;
+    }
+
+    section {
+        padding: 45px 5%;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">SUGITHRA C S</div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#research">Research</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<div class="hero" id="home">
+    <h1>Hello, I'm SUGITHRA C S</h1>
+
+    <h3>AI & Data Science Enthusiast</h3>
+
+    <p>
+        Exploring Artificial Intelligence, Machine Learning,
+        Knowledge Graphs and Data Science.
+        Passionate about research, learning and building
+        intelligent solutions.
+    </p>
+
+    <a href="#projects" class="btn">Explore My Projects</a>
+    <a href="#contact" class="btn">Contact Me</a>
+</div>
+
+<section id="about">
+    <h2>About Me</h2>
+
+    <div class="card">
+        <p>
+            I have an academic background in Mathematics
+            and Computer Science, with a strong interest
+            in Artificial Intelligence and Data Science.
+
+            My interests include knowledge representation,
+            machine learning, logical reasoning and
+            intelligent systems. I enjoy exploring
+            research problems and developing practical
+            technology-based solutions.
+        </p>
+    </div>
+</section>
+
+<section id="education">
+    <h2>Education</h2>
+
+    <div class="card">
+        <h3>Postgraduate Studies</h3>
+        <p>Computer Science / Data Science and AI</p>
+        <p>Update this section with your exact degree and university.</p>
+    </div>
+
+    <div class="card">
+        <h3>Mathematics Background</h3>
+        <p>Bachelor's and Master's level Mathematics education.</p>
+        <p>Update with your institution and graduation years.</p>
+    </div>
+</section>
+
+<section id="skills">
+    <h2>Technical Skills</h2>
+
+    <div class="card skills">
+        <span>Python</span>
+        <span>Machine Learning</span>
+        <span>Artificial Intelligence</span>
+        <span>SQL</span>
+        <span>Data Science</span>
+        <span>Knowledge Graphs</span>
+        <span>Ontology</span>
+        <span>Power BI</span>
+        <span>GitHub</span>
+    </div>
+</section>
+
+<section id="projects">
+    <h2>My Projects</h2>
+
+    <div class="card">
+        <h3>KG-Ontology-Based Knowledge Graph Completion</h3>
+
+        <p>
+            A research-oriented project involving knowledge
+            graphs, ontology construction, rule mining,
+            inferential logic and missing-edge prediction.
+            The project uses the FB15K-237 benchmark dataset.
+        </p>
+
+        <br>
+
+        <a class="project-link"
+           href="https://github.com/sujithra2505/KG-Ontology-Project"
+           target="_blank">
+           View Project on GitHub →
+        </a>
+    </div>
+
+    <div class="card">
+        <h3>Data Science and Machine Learning</h3>
+
+        <p>
+            Data exploration, statistical analysis,
+            predictive modelling and machine learning
+            experiments.
+        </p>
+    </div>
+</section>
+
+<section id="research">
+    <h2>Research Interests</h2>
+
+    <div class="card">
+        <p>
+            • Knowledge Graph Completion<br>
+            • Link Prediction<br>
+            • Ontology Engineering<br>
+            • Rule-Based Reasoning<br>
+            • Graph Neural Networks<br>
+            • Artificial Intelligence<br>
+            • Machine Learning
+        </p>
+    </div>
+</section>
+
+<section id="experience">
+    <h2>Experience & Certifications</h2>
+
+    <div class="card">
+        <h3>Teaching Experience</h3>
+        <p>Academic and mathematics teaching experience.</p>
+    </div>
+
+    <div class="card">
+        <h3>Cyber Security Internship</h3>
+        <p>NIELIT Calicut – Cyber Security and Ethical Hacking.</p>
+        <p>May 2026 – July 2026</p>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact Me</h2>
+
+    <div class="card">
+        <p>
+            GitHub:
+            <a href="https://github.com/sujithra2505"
+               target="_blank">
+               Visit My GitHub
+            </a>
+        </p>
+
+        <p>
+            LinkedIn: Add your LinkedIn profile URL
+        </p>
+
+        <p>
+            Email: Add your professional email address
+        </p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 SUGITHRA C S | Personal Portfolio</p>
+    <p>Designed with passion for AI and Technology.</p>
+</footer>
+
+</body>
+  </html>
+  
