@@ -4,113 +4,381 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SUGITHRA C S | AI & Data Science Portfolio</title>
-<meta name="description" content="Portfolio of SUGITHRA C S - Artificial Intelligence, Data Science, Machine Learning, Knowledge Graphs and Research.">
+<meta name="description" content="Portfolio of SUGITHRA C S - Mathematics, Teaching, Artificial Intelligence and Data Science.">
+<title>SUGITHRA C S | Personal Portfolio</title>
 
 <style>
 :root {
-    --navy:#10243b;
-    --blue:#168bd2;
-    --light:#eaf4fc;
-    --bg:#f5f7fb;
-    --text:#29384b;
-    --muted:#64748b;
-    --white:#fff;
+    --navy: #10243a;
+    --blue: #168ac4;
+    --light-blue: #eaf5fc;
+    --background: #f5f7fb;
+    --white: #ffffff;
+    --text: #293747;
+    --muted: #667487;
+    --border: #e5eaf0;
 }
-* {margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth}
-body {font-family:Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.7}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: var(--background);
+    color: var(--text);
+    line-height: 1.7;
+}
+
+a {
+    color: var(--blue);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 header {
-    background:var(--navy);color:white;padding:17px 6%;
-    display:flex;justify-content:space-between;align-items:center;
-    flex-wrap:wrap;gap:15px;position:sticky;top:0;z-index:100
+    background: var(--navy);
+    color: white;
+    padding: 22px 5%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.12);
 }
-.logo {font-size:21px;font-weight:bold;color:#70caff}
-nav {display:flex;flex-wrap:wrap;gap:14px}
-nav a {color:white;text-decoration:none;font-size:13px}
-nav a:hover {color:#70caff}
+
+.header-inner {
+    max-width: 1150px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo {
+    font-size: 27px;
+    font-weight: 750;
+    color: #69c4f5;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px 22px;
+}
+
+nav a {
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #69c4f5;
+    text-decoration: none;
+}
+
+section {
+    padding: 75px 7%;
+    scroll-margin-top: 125px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+}
+
 .hero {
-    background:linear-gradient(135deg,#10243b,#174c75);
-    color:white;text-align:center;padding:105px 7%
+    min-height: 490px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(135deg, #10243a, #174d72);
+    color: white;
+    padding: 90px 7%;
 }
-.hero .eyebrow {color:#70caff;letter-spacing:3px;font-weight:bold}
-.hero h1 {font-size:46px;margin:15px 0}
-.hero h3 {color:#83d0ff;font-size:22px;margin-bottom:18px}
-.hero p {max-width:760px;margin:auto;color:#e1ebf5;font-size:17px}
+
+.hero-content {
+    max-width: 850px;
+}
+
+.hero h1 {
+    font-size: clamp(34px, 6vw, 54px);
+    line-height: 1.2;
+    margin-bottom: 18px;
+}
+
+.hero h1 span {
+    color: #69c4f5;
+}
+
+.hero h2 {
+    font-size: clamp(19px, 3vw, 25px);
+    font-weight: 500;
+    margin-bottom: 18px;
+}
+
+.hero p {
+    color: #e0eaf2;
+    font-size: 17px;
+    max-width: 720px;
+    margin: auto;
+}
+
+.hero-buttons {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+
 .btn {
-    display:inline-block;background:var(--blue);color:white;
-    padding:11px 21px;border-radius:7px;text-decoration:none;
-    margin:7px 5px;transition:.2s;font-size:14px
+    display: inline-block;
+    padding: 11px 23px;
+    border-radius: 7px;
+    background: var(--blue);
+    color: white;
+    font-weight: 600;
 }
-.btn:hover {background:#0870b0;transform:translateY(-2px)}
-.btn-outline {background:transparent;border:1px solid #83d0ff}
-section {padding:70px 7%;scroll-margin-top:75px}
-.section-title {text-align:center;color:var(--navy);font-size:30px;margin-bottom:10px}
-.subtitle {text-align:center;color:var(--muted);margin-bottom:35px}
-.card {
-    background:white;padding:25px;border-radius:13px;
-    box-shadow:0 5px 20px #0000000b;margin-bottom:20px
+
+.btn-outline {
+    background: transparent;
+    border: 1px solid white;
+    color: white;
 }
-.card h3 {color:#126da8;margin-bottom:10px}
-.about {max-width:950px;margin:auto;text-align:justify}
+
+.btn:hover {
+    opacity: 0.88;
+    text-decoration: none;
+}
+
+.section-title {
+    text-align: center;
+    color: var(--navy);
+    font-size: 34px;
+    margin-bottom: 12px;
+}
+
+.section-subtitle {
+    text-align: center;
+    color: var(--muted);
+    font-size: 17px;
+    max-width: 720px;
+    margin: 0 auto 38px;
+}
+
+.about-content {
+    background: white;
+    padding: 35px;
+    border-radius: 14px;
+    border-left: 5px solid var(--blue);
+    box-shadow: 0 5px 22px rgba(20,45,70,0.05);
+}
+
+.about-content p {
+    margin-bottom: 16px;
+    font-size: 17px;
+}
+
+.about-content p:last-child {
+    margin-bottom: 0;
+}
+
+.highlight {
+    color: #126d9d;
+    font-weight: 650;
+}
+
 .grid {
-    display:grid;grid-template-columns:repeat(2,minmax(0,1fr));
-    gap:20px;max-width:1150px;margin:auto
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 22px;
 }
-.info {
-    background:white;padding:23px;border-radius:12px;
-    border-left:4px solid var(--blue);
-    box-shadow:0 4px 15px #00000008
+
+.card {
+    background: white;
+    padding: 27px;
+    border-radius: 13px;
+    border: 1px solid var(--border);
+    border-left: 5px solid var(--blue);
+    box-shadow: 0 5px 20px rgba(20,45,70,0.04);
+    height: 100%;
 }
-.info h3 {color:#126da8;margin-bottom:8px}
-.skills {
-    display:flex;flex-wrap:wrap;justify-content:center;
-    gap:12px;max-width:950px;margin:auto
+
+.card h3 {
+    color: #176c9b;
+    font-size: 21px;
+    margin-bottom: 12px;
 }
-.skills span {
-    background:var(--light);color:#14547f;
-    padding:9px 16px;border-radius:25px;font-size:14px;font-weight:bold
+
+.card h4 {
+    color: var(--navy);
+    margin: 12px 0 5px;
 }
-.project {
-    background:white;padding:25px;border-radius:13px;
-    border-top:4px solid var(--blue);
-    box-shadow:0 5px 20px #0000000b;
-    display:flex;flex-direction:column
+
+.card p {
+    margin-bottom: 9px;
 }
-.project .tag {color:#168bd2;font-size:12px;font-weight:bold;letter-spacing:1.5px}
-.project h3 {color:var(--navy);font-size:20px;margin:10px 0}
-.project p {margin-bottom:12px}
-.project ul {padding-left:20px;margin:5px 0 20px}
-.project .btn {align-self:flex-start;margin-top:auto}
-.project-grid {
-    display:grid;grid-template-columns:repeat(2,minmax(0,1fr));
-    gap:23px;max-width:1150px;margin:auto
+
+.meta {
+    color: var(--muted);
+    font-size: 14px;
+    margin-bottom: 12px;
 }
-.stats {display:flex;gap:9px;margin:12px 0;flex-wrap:wrap}
-.stat {background:var(--light);padding:9px 13px;border-radius:8px;flex:1;text-align:center}
-.stat strong {display:block;color:#126da8;font-size:19px}
-.stat small {color:var(--muted)}
-.research-grid {
-    display:grid;grid-template-columns:repeat(2,1fr);gap:16px
+
+ul {
+    padding-left: 21px;
 }
-.research-item {
-    background:white;padding:20px;border-left:4px solid var(--blue);
-    border-radius:9px
+
+li {
+    margin-bottom: 7px;
 }
-.research-item h3 {color:#126da8;margin-bottom:5px}
-.contact {max-width:800px;margin:auto}
-.contact p {margin:14px 0;overflow-wrap:anywhere}
-.contact a {color:#0878ba;text-decoration:none}
-.contact a:hover {text-decoration:underline}
-footer {background:var(--navy);color:white;text-align:center;padding:28px}
-footer p {margin:5px}
-@media(max-width:750px) {
-    header {justify-content:center;text-align:center}
-    nav {justify-content:center;gap:11px}
-    .hero {padding:75px 6%}
-    .hero h1 {font-size:33px}
-    section {padding:50px 5%}
-    .grid,.project-grid,.research-grid {grid-template-columns:1fr}
-    .section-title {font-size:26px}
+
+.skill-group {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+}
+
+.skill-group h3 {
+    color: #176c9b;
+    margin-bottom: 14px;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 9px;
+}
+
+.tag {
+    background: var(--light-blue);
+    color: #155c82;
+    padding: 7px 13px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 550;
+}
+
+.project-links {
+    display: inline-block;
+    margin-top: 10px;
+    font-weight: 650;
+}
+
+.timeline {
+    border-left: 3px solid var(--blue);
+    padding-left: 25px;
+    margin-left: 8px;
+}
+
+.timeline-item {
+    position: relative;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 23px;
+    border: 1px solid var(--border);
+}
+
+.timeline-item::before {
+    content: "";
+    position: absolute;
+    left: -34px;
+    top: 30px;
+    width: 14px;
+    height: 14px;
+    background: var(--blue);
+    border: 3px solid var(--background);
+    border-radius: 50%;
+}
+
+.contact-card {
+    max-width: 700px;
+    margin: auto;
+    background: white;
+    padding: 32px;
+    border-radius: 14px;
+    border: 1px solid var(--border);
+    border-top: 5px solid var(--blue);
+    box-shadow: 0 5px 22px rgba(20,45,70,0.05);
+}
+
+.contact-item {
+    padding: 13px 0;
+    border-bottom: 1px solid var(--border);
+    overflow-wrap: anywhere;
+}
+
+.contact-item:last-child {
+    border-bottom: none;
+}
+
+.contact-item strong {
+    display: inline-block;
+    min-width: 100px;
+    color: var(--navy);
+}
+
+footer {
+    text-align: center;
+    background: var(--navy);
+    color: #dce8f2;
+    padding: 25px 15px;
+    font-size: 14px;
+}
+
+footer p + p {
+    margin-top: 5px;
+    color: #9eb5c9;
+}
+
+@media (max-width: 600px) {
+    header {
+        padding: 17px 12px;
+    }
+
+    .logo {
+        font-size: 23px;
+    }
+
+    nav {
+        gap: 9px 15px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    section {
+        padding: 55px 6%;
+    }
+
+    .about-content,
+    .card,
+    .contact-card {
+        padding: 23px;
+    }
+
+    .section-title {
+        font-size: 29px;
+    }
+
+    .hero {
+        min-height: 430px;
+    }
 }
 </style>
 </head>
@@ -118,440 +386,517 @@ footer p {margin:5px}
 <body>
 
 <header>
-    <div class="logo">SUGITHRA C S</div>
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#education">Education</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#research">Research</a>
-        <a href="#experience">Experience</a>
-        <a href="#contact">Contact</a>
-    </nav>
+    <div class="header-inner">
+        <div class="logo">SUGITHRA C S</div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#research">Research</a>
+            <a href="#experience">Experience</a>
+            <a href="#achievements">Achievements</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </div>
 </header>
 
 <!-- HOME -->
-<div class="hero" id="home">
-    <p class="eyebrow">WELCOME TO MY PORTFOLIO</p>
-    <h1>SUGITHRA C S</h1>
-    <h3>AI & Data Science | Machine Learning | Research</h3>
-    <p>
-        M.Tech student in Computer Science and Engineering
-        with a specialization in AI and Data Science.
-        With a strong foundation in Mathematics, I am
-        interested in machine learning, knowledge graphs,
-        statistical modelling and intelligent systems.
-    </p>
-    <div style="margin-top:25px">
-        <a href="#projects" class="btn">Explore My Projects</a>
-        <a href="#contact" class="btn btn-outline">Contact Me</a>
+<section class="hero" id="home">
+    <div class="hero-content">
+        <h1>Hello, I'm <span>SUGITHRA C S</span></h1>
+        <h2>Mathematics | Teaching | Artificial Intelligence | Data Science</h2>
+        <p>
+            I am interested in understanding how mathematical concepts,
+            analytical thinking and emerging technologies can be applied
+            to solve real-world problems. I enjoy learning, teaching and
+            exploring the possibilities of data-driven solutions.
+        </p>
+        <div class="hero-buttons">
+            <a class="btn" href="#projects">Explore My Projects</a>
+            <a class="btn btn-outline" href="#contact">Contact Me</a>
+        </div>
     </div>
-</div>
+</section>
 
 <!-- ABOUT -->
 <section id="about">
-    <h2 class="section-title">About Me</h2>
-    <p class="subtitle">Academic background, technical interests and professional journey</p>
-    <div class="card about">
-        <p>
-            I am SUGITHRA C S, an M.Tech student in Computer
-            Science and Engineering (AI & Data Science), with
-            an M.Sc. background in Mathematics.
+    <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <p class="section-subtitle">
+            A background in Mathematics, a passion for teaching,
+            and an interest in technology and research.
         </p>
-        <br>
-        <p>
-            My interests span Artificial Intelligence,
-            Machine Learning, Data Science, Knowledge Graphs,
-            Ontology Engineering and statistical modelling.
-            I enjoy applying mathematical concepts and
-            computational techniques to solve analytical
-            and research-oriented problems.
-        </p>
-        <br>
-        <p>
-            My project experience includes knowledge graph
-            construction and reasoning, federated learning,
-            predictive modelling, employee analytics,
-            experimental design and queue simulation.
-        </p>
+
+        <div class="about-content">
+            <p>
+                My academic journey began with <span class="highlight">Mathematics</span>,
+                a subject that shaped the way I approach problems through
+                logical reasoning, analytical thinking and structured
+                problem-solving. I completed my Bachelor's and Master's
+                degrees in Mathematics, and this foundation continues to
+                influence my academic and professional interests.
+            </p>
+
+            <p>
+                Teaching is another important part of my journey. Through
+                my experience as a Mathematics Lecturer and Academic
+                Coordinator, I have had the opportunity to teach students,
+                support their learning and help them understand concepts
+                step by step. I enjoy explaining complex ideas in a simple
+                and practical way, and I value the learning that comes
+                from interacting with students.
+            </p>
+
+            <p>
+                Alongside Mathematics and teaching, I am pursuing my
+                interests in <span class="highlight">Artificial Intelligence
+                and Data Science</span>. I am particularly interested in
+                how mathematical and statistical methods support machine
+                learning, data analysis and intelligent systems. I have
+                been developing my practical knowledge through Python,
+                data analysis, machine learning projects and research
+                involving knowledge graphs and logical rule-based reasoning.
+            </p>
+
+            <p>
+                I see Mathematics, education and technology as connected
+                areas rather than separate interests. My goal is to keep
+                learning and developing skills that allow me to contribute
+                to research, analytical problem-solving and meaningful
+                technology-driven applications.
+            </p>
+        </div>
     </div>
 </section>
 
 <!-- EDUCATION -->
 <section id="education">
-    <h2 class="section-title">Education</h2>
-    <p class="subtitle">Academic qualifications</p>
-    <div class="grid">
-        <div class="info">
-            <h3>M.Tech – Computer Science and Engineering</h3>
-            <p>Cochin University of Science and Technology</p>
-            <p>Specialization: AI & Data Science</p>
-            <p>Currently pursuing</p>
-        </div>
-        <div class="info">
-            <h3>M.Sc. Mathematics</h3>
-            <p>Maharaja's College, Ernakulam</p>
-            <p>2018–2020 | CGPA: 8.23</p>
-        </div>
-        <div class="info">
-            <h3>B.Sc. Mathematics</h3>
-            <p>St. Xavier's College for Women, Aluva</p>
-            <p>2015–2018 | CGPA: 8.66</p>
-        </div>
-        <div class="info">
-            <h3>Academic Achievement</h3>
-            <p>GATE Mathematics – Qualified in 2023</p>
+    <div class="container">
+        <h2 class="section-title">Education</h2>
+        <p class="section-subtitle">
+            My academic background in Mathematics and Computer Science.
+        </p>
+
+        <div class="grid">
+            <div class="card">
+                <h3>M.Tech – Computer Science and Engineering</h3>
+                <p class="meta">Currently pursuing</p>
+                <p><strong>Specialization:</strong> Artificial Intelligence and Data Science</p>
+                <p>Cochin University of Science and Technology (CUSAT)</p>
+            </div>
+
+            <div class="card">
+                <h3>M.Sc. Mathematics</h3>
+                <p class="meta">2018 – 2020</p>
+                <p>Maharaja's College, Ernakulam</p>
+                <p><strong>CGPA:</strong> 8.23</p>
+            </div>
+
+            <div class="card">
+                <h3>B.Sc. Mathematics</h3>
+                <p class="meta">2015 – 2018</p>
+                <p>St. Xavier's College for Women, Aluva</p>
+                <p><strong>CGPA:</strong> 8.66</p>
+            </div>
         </div>
     </div>
 </section>
 
 <!-- SKILLS -->
 <section id="skills">
-    <h2 class="section-title">Technical Skills</h2>
-    <p class="subtitle">Tools, technologies and analytical methods</p>
-    <div class="skills">
-        <span>Python</span>
-        <span>R</span>
-        <span>SQL</span>
-        <span>Pandas</span>
-        <span>NumPy</span>
-        <span>Matplotlib</span>
-        <span>Seaborn</span>
-        <span>Scikit-learn</span>
-        <span>Machine Learning</span>
-        <span>Exploratory Data Analysis</span>
-        <span>Statistical Analysis</span>
-        <span>Regression Analysis</span>
-        <span>ANOVA</span>
-        <span>Decision Trees</span>
-        <span>Random Forest</span>
-        <span>Logistic Regression</span>
-        <span>Knowledge Graphs</span>
-        <span>Ontology</span>
-        <span>Git & GitHub</span>
-        <span>Jupyter Notebook</span>
-        <span>Google Colab</span>
-        <span>VS Code</span>
-        <span>AWS</span>
-        <span>Linux</span>
-        <span>Microsoft Excel</span>
+    <div class="container">
+        <h2 class="section-title">Skills</h2>
+        <p class="section-subtitle">
+            Knowledge and tools developed through academic work,
+            teaching and practical projects.
+        </p>
+
+        <div class="grid">
+            <div class="skill-group">
+                <h3>Programming and Data Analysis</h3>
+                <div class="tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">R</span>
+                    <span class="tag">Pandas</span>
+                    <span class="tag">NumPy</span>
+                    <span class="tag">Matplotlib</span>
+                    <span class="tag">Seaborn</span>
+                    <span class="tag">SQL</span>
+                </div>
+            </div>
+
+            <div class="skill-group">
+                <h3>Artificial Intelligence and Machine Learning</h3>
+                <div class="tags">
+                    <span class="tag">Scikit-learn</span>
+                    <span class="tag">Machine Learning</span>
+                    <span class="tag">Classification</span>
+                    <span class="tag">Model Evaluation</span>
+                    <span class="tag">Data Preprocessing</span>
+                    <span class="tag">Knowledge Graphs</span>
+                </div>
+            </div>
+
+            <div class="skill-group">
+                <h3>Mathematics and Statistics</h3>
+                <div class="tags">
+                    <span class="tag">Statistical Analysis</span>
+                    <span class="tag">Regression</span>
+                    <span class="tag">ANOVA</span>
+                    <span class="tag">Experimental Design</span>
+                    <span class="tag">Queuing Theory</span>
+                    <span class="tag">Mathematical Modelling</span>
+                </div>
+            </div>
+
+            <div class="skill-group">
+                <h3>Tools and Platforms</h3>
+                <div class="tags">
+                    <span class="tag">Jupyter Notebook</span>
+                    <span class="tag">Google Colab</span>
+                    <span class="tag">VS Code</span>
+                    <span class="tag">Kaggle</span>
+                    <span class="tag">Git</span>
+                    <span class="tag">GitHub</span>
+                    <span class="tag">Power BI</span>
+                    <span class="tag">Excel</span>
+                </div>
+            </div>
+
+            <div class="skill-group">
+                <h3>Teaching and Academic Skills</h3>
+                <div class="tags">
+                    <span class="tag">Mathematics Teaching</span>
+                    <span class="tag">Concept Explanation</span>
+                    <span class="tag">Academic Coordination</span>
+                    <span class="tag">Student Mentoring</span>
+                    <span class="tag">Research and Analysis</span>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 
 <!-- PROJECTS -->
 <section id="projects">
-    <h2 class="section-title">Projects & GitHub Work</h2>
-    <p class="subtitle">Selected implementations and academic projects</p>
+    <div class="container">
+        <h2 class="section-title">Projects</h2>
+        <p class="section-subtitle">
+            Selected academic and practical projects.
+        </p>
 
-    <div class="project-grid">
-
-        <!-- 1 KG -->
-        <div class="project">
-            <span class="tag">PROJECT 01 | KNOWLEDGE GRAPHS</span>
-            <h3>Ontology-Based Knowledge Graph Completion</h3>
-            <p>
-                A knowledge graph completion pipeline using
-                FB15K-237, ontology construction, rule mining
-                and inferential reasoning to generate and
-                evaluate missing-edge candidates.
-            </p>
-            <ul>
-                <li>FB15K-237 benchmark dataset</li>
-                <li>Knowledge graph construction</li>
-                <li>RDF/OWL ontology generation</li>
-                <li>Logical rule learning and inference</li>
-                <li>Candidate generation and evaluation</li>
-                <li>Interactive graph and prediction visualizations</li>
-            </ul>
-            <a class="btn" href="https://github.com/sujithra2505/KG-Ontology-Project" target="_blank">View GitHub Project →</a>
-        </div>
-
-        <!-- 2 FEDERATED -->
-        <div class="project">
-            <span class="tag">PROJECT 02 | PRIVACY-PRESERVING AI</span>
-            <h3>Federated Learning – HFL and VFL</h3>
-            <p>
-                Implementation of federated learning approaches
-                that enable multiple clients to collaboratively
-                train a global model without sharing raw data.
-            </p>
-            <ul>
-                <li>Horizontal Federated Learning (HFL)</li>
-                <li>Vertical Federated Learning (VFL)</li>
-                <li>Collaborative model training</li>
-                <li>Privacy-preserving machine learning concepts</li>
-            </ul>
-            <a class="btn" href="https://github.com/sujithra2505/federated-learning-project" target="_blank">View GitHub Project →</a>
-        </div>
-
-        <!-- 3 DIABETES -->
-        <div class="project">
-            <span class="tag">PROJECT 03 | MACHINE LEARNING</span>
-            <h3>Diabetes Prediction Using Machine Learning</h3>
-            <p>
-                A binary classification project using a
-                100,000-record diabetes dataset to compare
-                multiple machine learning algorithms.
-            </p>
-            <ul>
-                <li>Data cleaning and duplicate removal</li>
-                <li>One-hot encoding and feature scaling</li>
-                <li>Logistic Regression</li>
-                <li>Decision Tree and Random Forest</li>
-                <li>Classification reports and model comparison</li>
-            </ul>
-            <div class="stats">
-                <div class="stat"><strong>96.88%</strong><small>Random Forest</small></div>
-                <div class="stat"><strong>95.07%</strong><small>Decision Tree</small></div>
-                <div class="stat"><strong>88.46%</strong><small>Logistic Regression</small></div>
+        <div class="grid">
+            <div class="card">
+                <h3>Knowledge Graph and Ontology-Based Rule Inference</h3>
+                <p class="meta">Knowledge Representation | Logical Reasoning</p>
+                <p>
+                    Developed a project exploring knowledge graph
+                    representation, ontology-based reasoning and
+                    logical rule mining for predicting missing
+                    relationships in a knowledge graph.
+                </p>
+                <p>
+                    Worked with the FB15K-237 benchmark dataset,
+                    rule-based inference and candidate edge evaluation.
+                </p>
+                <a class="project-links"
+                   href="https://github.com/sujithra2505/KG-Ontology-Project"
+                   target="_blank">View GitHub Repository →</a>
             </div>
-            <p><small>Reported accuracy on the project's evaluation split. Educational project, not a medical diagnostic tool.</small></p>
-            <a class="btn" href="https://github.com/sujithra2505/Diabetes_Prediction_ML" target="_blank">View GitHub Project →</a>
-        </div>
 
-        <!-- 4 HR -->
-        <div class="project">
-            <span class="tag">PROJECT 04 | DATA ANALYTICS</span>
-            <h3>IBM HR Employee Attrition Analysis</h3>
-            <p>
-                Exploratory data analysis of the IBM HR Analytics
-                dataset to investigate workplace characteristics
-                associated with employee attrition.
-            </p>
-            <div class="stats">
-                <div class="stat"><strong>1,470</strong><small>Employees</small></div>
-                <div class="stat"><strong>32</strong><small>Features retained</small></div>
-                <div class="stat"><strong>16.12%</strong><small>Attrition rate</small></div>
+            <div class="card">
+                <h3>Federated Learning</h3>
+                <p class="meta">Machine Learning | Distributed Learning</p>
+                <p>
+                    Explored Horizontal and Vertical Federated Learning,
+                    focusing on collaborative model training approaches
+                    where data can remain distributed across participants.
+                </p>
+                <a class="project-links"
+                   href="https://github.com/sujithra2505/federated-learning-project"
+                   target="_blank">View GitHub Repository →</a>
             </div>
-            <ul>
-                <li>Data cleaning and preprocessing</li>
-                <li>Department-wise attrition analysis</li>
-                <li>Overtime and income comparisons</li>
-                <li>Job satisfaction and work-life balance</li>
-                <li>Statistical and visual exploration</li>
-            </ul>
-            <a class="btn" href="https://github.com/sujithra2505/HR-Employee-Attrition-EDA" target="_blank">View GitHub Project →</a>
-        </div>
 
-        <!-- 5 EXPENSE -->
-        <div class="project">
-            <span class="tag">PROJECT 05 | APPLICATION</span>
-            <h3>Expense Tracker</h3>
-            <p>
-                A repository in my GitHub portfolio focused
-                on an expense tracking project.
-            </p>
-            <p>
-                Explore the source repository for implementation
-                details and available project documentation.
-            </p>
-            <a class="btn" href="https://github.com/sujithra2505/Expense-Tracker" target="_blank">View GitHub Project →</a>
-        </div>
+            <div class="card">
+                <h3>Diabetes Prediction Using Machine Learning</h3>
+                <p class="meta">Python | Classification</p>
+                <p>
+                    Worked on a diabetes prediction dataset involving
+                    data cleaning, preprocessing, feature preparation
+                    and classification using Logistic Regression,
+                    Decision Tree and Random Forest.
+                </p>
+                <p>
+                    Reported model accuracies included 96.88% for
+                    Random Forest, 95.07% for Decision Tree and
+                    88.46% for Logistic Regression.
+                </p>
+                <a class="project-links"
+                   href="https://github.com/sujithra2505/Diabetes_Prediction_ML"
+                   target="_blank">View GitHub Repository →</a>
+            </div>
 
-        <!-- 6 STUDENT -->
-        <div class="project">
-            <span class="tag">PROJECT 06 | APPLICATION</span>
-            <h3>Student Management System</h3>
-            <p>
-                A student management project available in
-                my public GitHub repositories.
-            </p>
-            <p>
-                Explore the repository for its source files
-                and implementation details.
-            </p>
-            <a class="btn" href="https://github.com/sujithra2505/Student-Management-System" target="_blank">View GitHub Project →</a>
-        </div>
+            <div class="card">
+                <h3>IBM HR Employee Attrition Analysis</h3>
+                <p class="meta">Exploratory Data Analysis</p>
+                <p>
+                    Conducted exploratory data analysis on the IBM HR
+                    Employee Attrition dataset to examine workforce
+                    patterns and factors associated with employee
+                    attrition.
+                </p>
+                <a class="project-links"
+                   href="https://github.com/sujithra2505/HR-Employee-Attrition-EDA"
+                   target="_blank">View GitHub Repository →</a>
+            </div>
 
-        <!-- 7 ANOVA -->
-        <div class="project">
-            <span class="tag">ACADEMIC PROJECT 07 | STATISTICS</span>
-            <h3>Experimental Design and ANOVA</h3>
-            <p>
-                Design and analysis of factorial experiments
-                using statistical methods to identify significant
-                factors and study process parameters.
-            </p>
-            <ul>
-                <li>Full factorial experimental design</li>
-                <li>Analysis of Variance (ANOVA)</li>
-                <li>Regression analysis</li>
-                <li>Process parameter optimization</li>
-                <li>Python, R, Minitab and Excel</li>
-            </ul>
-            <p><small>Academic project experience documented in CV.</small></p>
-        </div>
+            <div class="card">
+                <h3>Expense Tracker</h3>
+                <p class="meta">Application Development</p>
+                <p>
+                    A project exploring an application-based approach
+                    to recording and organizing expense information.
+                </p>
+                <a class="project-links"
+                   href="https://github.com/sujithra2505/Expense-Tracker"
+                   target="_blank">View GitHub Repository →</a>
+            </div>
 
-        <!-- 8 QUEUE -->
-        <div class="project">
-            <span class="tag">ACADEMIC PROJECT 08 | SIMULATION</span>
-            <h3>Queuing Models and Simulation</h3>
-            <p>
-                Implementation and analysis of mathematical
-                queuing models for service and operational systems.
-            </p>
-            <ul>
-                <li>M/M/1 and M/M/c queue models</li>
-                <li>Waiting time and queue length</li>
-                <li>Server utilization analysis</li>
-                <li>Arrival and service rate analysis</li>
-                <li>Python-based simulation</li>
-            </ul>
-            <p><small>Academic project experience documented in CV.</small></p>
-        </div>
+            <div class="card">
+                <h3>Student Management System</h3>
+                <p class="meta">Application Development</p>
+                <p>
+                    An academic software project focused on organizing
+                    student-related information through a management
+                    system.
+                </p>
+                <a class="project-links"
+                   href="https://github.com/sujithra2505/Student-Management-System"
+                   target="_blank">View GitHub Repository →</a>
+            </div>
 
+            <div class="card">
+                <h3>Experimental Design and ANOVA</h3>
+                <p class="meta">Statistics | Mathematical Analysis</p>
+                <p>
+                    Academic work involving factorial experimental
+                    designs, analysis of variance, regression and
+                    interpretation of experimental results.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Queuing Models and Simulation</h3>
+                <p class="meta">Applied Mathematics | Simulation</p>
+                <p>
+                    Academic work involving M/M/1 and M/M/c queuing
+                    models, with analysis of waiting time, queue
+                    length, utilization and arrival and service rates.
+                </p>
+            </div>
+        </div>
     </div>
 </section>
 
 <!-- RESEARCH -->
 <section id="research">
-    <h2 class="section-title">Research Interests</h2>
-    <p class="subtitle">Areas of academic and technical interest</p>
-    <div class="research-grid">
-        <div class="research-item">
-            <h3>Knowledge Graph Completion</h3>
-            <p>Predicting missing relationships in graph-structured knowledge.</p>
-        </div>
-        <div class="research-item">
-            <h3>Link Prediction</h3>
-            <p>Discovering potential relationships between entities.</p>
-        </div>
-        <div class="research-item">
-            <h3>Ontology Engineering</h3>
-            <p>Semantic knowledge representation and reasoning.</p>
-        </div>
-        <div class="research-item">
-            <h3>Rule-Based Reasoning</h3>
-            <p>Logical inference and rule-based knowledge discovery.</p>
-        </div>
-        <div class="research-item">
-            <h3>Graph Neural Networks</h3>
-            <p>Learning from graph-structured data.</p>
-        </div>
-        <div class="research-item">
-            <h3>Machine Learning</h3>
-            <p>Predictive modelling, classification and model evaluation.</p>
-        </div>
-        <div class="research-item">
-            <h3>Statistical Modelling</h3>
-            <p>Experimental design, ANOVA and regression methods.</p>
-        </div>
-        <div class="research-item">
-            <h3>Federated Learning</h3>
-            <p>Collaborative learning and privacy-preserving AI.</p>
+    <div class="container">
+        <h2 class="section-title">Research Interests</h2>
+        <p class="section-subtitle">
+            Areas I am interested in exploring through further
+            study, research and practical applications.
+        </p>
+
+        <div class="grid">
+            <div class="card">
+                <h3>Artificial Intelligence and Data Science</h3>
+                <p>
+                    Exploring machine learning, data-driven methods
+                    and analytical approaches for solving practical
+                    problems.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Knowledge Graphs and Reasoning</h3>
+                <p>
+                    Interested in knowledge representation, ontology,
+                    logical rule learning and link prediction in
+                    structured knowledge graphs.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Mathematical and Statistical Modelling</h3>
+                <p>
+                    Interested in applying mathematical reasoning,
+                    probability, statistics and optimization to
+                    analytical and computational problems.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Mathematics Education</h3>
+                <p>
+                    Interested in effective teaching methods,
+                    conceptual learning and making mathematical
+                    ideas easier to understand.
+                </p>
+            </div>
         </div>
     </div>
 </section>
 
 <!-- EXPERIENCE -->
 <section id="experience">
-    <h2 class="section-title">Professional Experience</h2>
-    <p class="subtitle">Teaching, academic coordination and industry experience</p>
-    <div class="grid">
-        <div class="info">
-            <h3>Lecturer – Mathematics</h3>
-            <p><strong>Jai Bharath College of Management and Engineering Technology</strong></p>
-            <p>05 February 2024 – 25 July 2025</p>
-            <p>Mathematics teaching, class tutoring, academic guidance and student activities.</p>
-            <p>Responsibilities included NSS Programme Officer and Staff Advisor.</p>
-        </div>
-        <div class="info">
-            <h3>Academic Coordinator</h3>
-            <p><strong>Mathlab Cochin</strong></p>
-            <p>Duration: 8 months</p>
-            <p>Academic coordination, UG/PG coaching support, NET preparation and student communication.</p>
-        </div>
-        <div class="info">
-            <h3>Purchase Executive</h3>
-            <p><strong>Meenakshi Traders</strong></p>
-            <p>Duration: 6 months</p>
-            <p>Procurement operations, supplier coordination, documentation and vendor communication.</p>
-        </div>
-        <div class="info">
-            <h3>Cyber Security and Ethical Hacking Intern</h3>
-            <p><strong>NIELIT Calicut</strong></p>
-            <p>24 May 2026 – 03 July 2026 | 6 weeks</p>
-            <p>Internship completed.</p>
+    <div class="container">
+        <h2 class="section-title">Professional Experience</h2>
+        <p class="section-subtitle">
+            Experience in teaching, academic coordination
+            and professional responsibilities.
+        </p>
+
+        <div class="timeline">
+
+            <div class="timeline-item">
+                <h3>Lecturer – Mathematics</h3>
+                <p class="meta">
+                    Jai Bharath College of Management and Engineering Technology
+                    | 05 February 2024 – 25 July 2025
+                </p>
+                <ul>
+                    <li>Taught Mathematics to diploma and first-year students.</li>
+                    <li>Worked as a class tutor and supported student academic progress.</li>
+                    <li>Served as NSS Programme Officer and Staff Advisor.</li>
+                    <li>Supported academic and student-related activities.</li>
+                </ul>
+            </div>
+
+            <div class="timeline-item">
+                <h3>Academic Coordinator</h3>
+                <p class="meta">Mathlab Cochin | 8 months</p>
+                <ul>
+                    <li>Coordinated academic activities for undergraduate and postgraduate coaching.</li>
+                    <li>Supported Mathematics learning and NET examination preparation.</li>
+                    <li>Assisted students in understanding subject concepts and preparing for examinations.</li>
+                </ul>
+            </div>
+
+            <div class="timeline-item">
+                <h3>Purchase Executive</h3>
+                <p class="meta">Meenakshi Traders, Ernakulam | 6 months</p>
+                <ul>
+                    <li>Handled purchase-related responsibilities and coordination.</li>
+                </ul>
+            </div>
+
+            <div class="timeline-item">
+                <h3>Cyber Security and Ethical Hacking Intern</h3>
+                <p class="meta">
+                    NIELIT Calicut | 24 May 2026 – 03 July 2026
+                </p>
+                <p>
+                    Completed a six-week internship focused on
+                    Cyber Security and Ethical Hacking.
+                </p>
+            </div>
+
         </div>
     </div>
 </section>
 
-<!-- CERTIFICATIONS -->
-<section id="certifications">
-    <h2 class="section-title">Achievements & Training</h2>
-    <p class="subtitle">Academic achievements, workshops and training</p>
-    <div class="grid">
-        <div class="info">
-            <h3>GATE 2023</h3>
-            <p>Qualified GATE Examination in Mathematics.</p>
-        </div>
-        <div class="info">
-            <h3>Introduction to R Software</h3>
-            <p>Completed a course funded by the Ministry of HRD, Government of India.</p>
-        </div>
-        <div class="info">
-            <h3>National Seminar</h3>
-            <p>Analysis and Algebra – St. Teresa's College (Autonomous), Ernakulam.</p>
-        </div>
-        <div class="info">
-            <h3>Topology Workshops</h3>
-            <p>Participated in workshops on Fundamentals of Topology and Introduction to Topology.</p>
-        </div>
-        <div class="info">
-            <h3>Statistical Workshops</h3>
-            <p>Design of Experiments and Queuing Theory.</p>
+<!-- ACHIEVEMENTS -->
+<section id="achievements">
+    <div class="container">
+        <h2 class="section-title">Achievements and Training</h2>
+        <p class="section-subtitle">
+            Academic achievements, workshops and professional learning.
+        </p>
+
+        <div class="grid">
+            <div class="card">
+                <h3>GATE Qualification</h3>
+                <p>
+                    Qualified GATE 2023 in Mathematics.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Introduction to R Software</h3>
+                <p>
+                    Completed training in R Software through
+                    a Ministry of HRD-funded programme.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Statistical Workshops</h3>
+                <p>
+                    Participated in workshops on Design of Experiments
+                    and Queuing Theory.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Mathematics Seminars and Workshops</h3>
+                <p>
+                    Participated in academic programmes related to
+                    Analysis, Algebra and Topology.
+                </p>
+            </div>
         </div>
     </div>
 </section>
-
-<!-- CONTACT -->
 
 <!-- CONTACT -->
 <section id="contact">
-    <h2 class="section-title">Contact Me</h2>
-    <p class="subtitle">
-        Let's connect for research, projects and professional opportunities.
-    </p>
-
-    <div class="card contact">
-        <h3>Get in Touch</h3>
-
-        <p>
-            <strong>Email:</strong>
-            <a href="mailto:sujithra2598@gmail.com">
-                sujithra2598@gmail.com
-            </a>
+    <div class="container">
+        <h2 class="section-title">Contact Me</h2>
+        <p class="section-subtitle">
+            I welcome opportunities to connect regarding teaching,
+            research, Mathematics, AI and Data Science.
         </p>
 
-        <p>
-            <strong>Phone:</strong>
-            <a href="tel:+919539603796">
-                +91 9539603796
-            </a>
-        </p>
+        <div class="contact-card">
+            <div class="contact-item">
+                <strong>Email:</strong>
+                <a href="mailto:sujithra2598@gmail.com">
+                    sujithra2598@gmail.com
+                </a>
+            </div>
 
-        <p>
-            <strong>LinkedIn:</strong>
-            <a href="https://www.linkedin.com/in/sugithra-c-s-aa5461188/" target="_blank">
-                View LinkedIn Profile
-            </a>
-        </p>
+            <div class="contact-item">
+                <strong>Phone:</strong>
+                <a href="tel:+919539603796">
+                    +91 9539603796
+                </a>
+            </div>
 
-        <p>
-            <strong>GitHub:</strong>
-            <a href="https://github.com/sujithra2505" target="_blank">
-                View GitHub Profile
-            </a>
-        </p>
+            <div class="contact-item">
+                <strong>LinkedIn:</strong>
+                <a href="https://www.linkedin.com/in/sugithra-c-s-aa5461188/"
+                   target="_blank" rel="noopener noreferrer">
+                    View LinkedIn Profile
+                </a>
+            </div>
+
+            <div class="contact-item">
+                <strong>GitHub:</strong>
+                <a href="https://github.com/sujithra2505"
+                   target="_blank" rel="noopener noreferrer">
+                    View GitHub Profile
+                </a>
+            </div>
+        </div>
     </div>
 </section>
 
 <footer>
-    <p>© 2026 SUGITHRA C S | Personal Portfolio</p>
-    <p>AI & Data Science | Machine Learning | Research</p>
+    <p>© 2026 SUGITHRA C S. All Rights Reserved.</p>
+    <p>Mathematics | Teaching | Artificial Intelligence | Data Science</p>
 </footer>
 
 </body>
 </html>
-
